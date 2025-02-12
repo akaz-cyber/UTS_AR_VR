@@ -60,18 +60,6 @@
             event-set__click="_event: click; color: red; _target: #trexModel; animation-mixer: autoplay: true; animation.property: position; animation.to: 1.3 0.75 -3;">
         </a-entity>
     </a-entity>
-
-
-        <!-- <a-entity geometry="primitive: triangle" position="0 3 -3" material="color: blue"
-            event-set__click="_event: click; color: red; _target: #trexModel; animation-mixer: autoplay: true; animation.property: position; animation.to: 1.3 2.5 -3;">
-        </a-entity>
-
-        <a-entity position="0 0.75 -3">
-            <a-entity geometry="primitive: triangle" rotation="0 0 180" color="#4CC3D9"
-                event-set__click="_event: click; color: red; _target: #trexModel; animation-mixer: autoplay: true; animation.property: position; animation.to: 1.3 0.75 -3;">
-            </a-entity>
-        </a-entity> -->
-
         <a-gltf-model id="trexModel" gltf-model="#trex" scale="0.2 0.2 0.2" position="1.3 0.75 -3" animation-mixer>
         </a-gltf-model>
     </a-scene>
@@ -79,7 +67,7 @@
     <script>
         function changeModel(modelId) {
             let model = document.querySelector('#trexModel');
-            console.log("Mengubah model ke:", modelId); // Debugging
+            console.log("Mengubah model ke:", modelId); 
             model.setAttribute('gltf-model', modelId);
         }
     </script>
